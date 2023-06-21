@@ -110,3 +110,42 @@ ul {
 .wine-list {
   margin: 12px 0px;
 }
+
+#contact p,
+h4 {
+  font-size: medium;
+}
+.logoFooter {
+  max-width: 200px;
+
+  display: block;
+  margin: 0 auto;
+}
+.logoName {
+  margin-top: -40px;
+}
+
+.mail {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: var(--secondaryColor);
+}
+.fa-brands {
+  margin: 30px 20px 20px 0;
+}
+
+.social {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.time1 {
+  margin-left: 20px;
+}
+
+.time2 {
+  margin-left: 35px;
+}
