@@ -1,0 +1,112 @@
+:root {
+  --primaryColor: #f7f7f7;
+  --secondaryColor: #f5b553;
+  --thirdColor: #854836;
+  --fourthColor: #000000;
+}
+
+body {
+  background-color: var(--fourthColor);
+  color: var(--primaryColor);
+  padding: 0px 24px;
+  font-family: "Roboto", sans-serif;
+
+  letter-spacing: 0.6px;
+}
+
+.nav-link {
+  color: var(--primaryColor);
+  font-family: "Roboto", sans-serif;
+}
+.nav-link:hover {
+  color: var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+  padding: 2px 5px;
+}
+.navbar-toggler {
+  border: 1px solid var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+}
+.navbar-toggler-icon {
+  margin: 5px auto;
+}
+.logo {
+  width: 60px;
+}
+.y {
+  color: var(--secondaryColor);
+}
+#maincourse {
+  background-image: url("/img/steak.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+#dessert {
+  background-image: url("/img/dessert.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px;
+}
+#drink {
+  background-image: url("/img/drink.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  background-size: cover;
+  border-radius: 20px;
+}
+.jk {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0px;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+.menu-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 10px 15px 20px 15px;
+
+  padding: 0px 20px;
+}
+
+h1 {
+  color: var(--secondaryColor);
+  font-family: "Prata", serif;
+}
+h2 {
+  background-color: var(--secondaryColor);
+  color: var(--fourthColor);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+h4 {
+  color: var(--secondaryColor);
+  margin: 20px 0px;
+}
+
+.wine-item {
+  margin: 10px 15px 20px 15px;
+
+  padding: 0px 20px;
+}
+
+ul {
+  margin: 0;
+}
+
+.wine-list {
+  margin: 12px 0px;
+}

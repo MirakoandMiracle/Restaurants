@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #f7f7f7;
+  --secondaryColor: #f5b553;
+  --thirdColor: #854836;
+  --fourthColor: #000000;
+}
+
+body {
+  color: var(--primaryColor);
+  background-color: var(--fourthColor);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.6px;
+}
+
+.nav-link {
+  color: var(--primaryColor);
+  font-family: "Roboto", sans-serif;
+}
+.nav-link:hover {
+  color: var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+  padding: 2px 5px;
+}
+h1 {
+  font-family: "Prata", serif;
+  font-weight: 550;
+}
+
+.navbar-toggler {
+  border: 1px solid var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+}
+.navbar-toggler-icon {
+  margin: 5px auto;
+}
+.logo {
+  width: 60px;
+}
+.y {
+  color: var(--secondaryColor);
+}
+#content {
+  background-size: cover;
+  background-image: url("/img/m.jpg");
+  max-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+
+  height: 100vh;
+  width: 100%;
+}
+.bookBtn {
+  border: 3px solid #f5b566;
+  color: var(--fourthColor);
+  box-shadow: 0px 0px 12px var(--secondaryColor);
+  padding: 10px 30px;
+  background-color: var(--secondaryColor);
+}
+.bookBtn:hover {
+  background-color: var(--fourthColor);
+  color: var(--secondaryColor);
+}
+
+.navbar-toggler:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+.card-link {
+  display: none;
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: var(--secondaryColor);
+  background-color: var(--fourthColor);
+  border-radius: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.card:hover .card-link {
+  display: block;
+}
+
+.card-link:hover {
+  background-color: var(--secondaryColor);
+  color: var(--fourthColor);
+}
+.card-text {
+  color: var(--primaryColor);
+}
+.cardSpan {
+  font-size: larger;
+  font-weight: 500;
+  font-family: "Roboto" "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2,
+h4 {
+  color: var(--secondaryColor);
+  font-family: "Prata", serif;
+}
+.m-p {
+  aspect-ratio: 4/3;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+#review {
+  background-image: url("/img/review.jpg");
+  background-attachment: fixed;
+
+  background-position: center;
+  width: 100%;
+  background-size: cover;
+}
+
+.carousel-item {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 70%;
+  margin: 0 auto;
+
+  padding: 20px 10px;
+}
+
+.carousel-item p {
+  font-size: 15px;
+  padding: 0px 20px;
+}
+.circle-img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+#contact p,
+h4 {
+  font-size: medium;
+}
+.logoFooter {
+  max-width: 200px;
+
+  display: block;
+  margin: 0 auto;
+}
+.logoName {
+  margin-top: -40px;
+}
+
+.mail {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: var(--secondaryColor);
+}
+.fa-brands {
+  margin: 30px 20px 20px 0;
+}
+
+.social {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.time1 {
+  margin-left: 20px;
+}
+
+.time2 {
+  margin-left: 35px;
+}
+@media (max-width: 576px) {
+  .imagenone {
+    display: none;
+  }
+}
