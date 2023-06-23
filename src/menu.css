@@ -81,9 +81,11 @@ body {
   padding: 0px 20px;
 }
 
-h1 {
-  color: var(--secondaryColor);
+h1,
+h3,
+h4 {
   font-family: "Prata", serif;
+  color: var(--secondaryColor);
 }
 h2 {
   background-color: var(--secondaryColor);
@@ -93,7 +95,6 @@ h2 {
 }
 
 h4 {
-  color: var(--secondaryColor);
   margin: 20px 0px;
 }
 
@@ -136,7 +137,9 @@ h4 {
 .fa-brands {
   margin: 30px 20px 20px 0;
 }
-
+.fa-brands:hover {
+  color: #f5b553;
+}
 .social {
   text-decoration: none;
   color: var(--primaryColor);

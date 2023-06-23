@@ -179,7 +179,9 @@ h4 {
 .fa-brands {
   margin: 30px 20px 20px 0;
 }
-
+.fa-brands:hover {
+  color: #f5b553;
+}
 .social {
   text-decoration: none;
   color: var(--primaryColor);

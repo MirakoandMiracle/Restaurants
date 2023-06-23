@@ -1,0 +1,136 @@
+:root {
+  --primaryColor: #f7f7f7;
+  --secondaryColor: #f5b553;
+
+  --third: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--third);
+  color: var(--primaryColor);
+
+  font-family: "Roboto", sans-serif;
+
+  letter-spacing: 0.6px;
+}
+
+h1,
+h2,
+h4 {
+  color: var(--secondaryColor);
+  font-family: "Prata", serif;
+}
+.bookBtn {
+  border: 3px solid #f5b566;
+  color: var(--third);
+  box-shadow: 0px 0px 12px var(--secondaryColor);
+  padding: 10px 30px;
+  background-color: var(--secondaryColor);
+  display: block;
+  margin: 0 auto;
+}
+.bookBtn:hover {
+  background-color: var(--third);
+  color: var(--secondaryColor);
+}
+.btn-warning:active {
+  background-color: var(--secondaryColor);
+}
+.mb-3 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+label {
+  color: var(--secondaryColor);
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+.card {
+  background-color: var(--secondaryColor);
+  display: block;
+  margin: 0 auto;
+}
+
+/* nav */
+.nav-link {
+  color: var(--primaryColor);
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+.nav-link:hover {
+  color: var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+  padding: 2px 5px;
+}
+.navbar-toggler {
+  border: 1px solid var(--secondaryColor);
+  box-shadow: 0px 0px 15px var(--secondaryColor);
+}
+.navbar-toggler:hover {
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+}
+.navbar-toggler-icon {
+  margin: 5px auto;
+}
+.y {
+  color: var(--secondaryColor);
+}
+.logo {
+  width: 60px;
+}
+
+/* contact page */
+#contact p,
+h4 {
+  font-size: medium;
+}
+.logoFooter {
+  max-width: 200px;
+
+  display: block;
+  margin: 0 auto;
+}
+.logoName {
+  margin-top: -40px;
+}
+
+.mail {
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: var(--secondaryColor);
+}
+.fa-brands {
+  margin: 30px 20px 20px 0;
+}
+.fa-brands:hover {
+  color: #f5b553;
+}
+.social {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.time1 {
+  margin-left: 20px;
+}
+
+.time2 {
+  margin-left: 35px;
+}
