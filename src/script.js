@@ -46,6 +46,8 @@ const GetCard = (event) => {
   ) {
     alert("Please fill in all the required fields.");
     return;
+  } else {
+    alert("You booked !! Check out your booked card below.");
   }
   const card = document.querySelector(".BookedCard");
   card.innerHTML = `
@@ -61,9 +63,9 @@ const GetCard = (event) => {
       <div class="card-body">
         <h5 class="card-title mb-4">${name.value}</h5>
         <ul>
-          <li><span>No. of Guests:</span>${nGuest.value}</li>
-          <li><span>Date&Time:</span>${dateTime.value}</li>
-          <li><span>Location:</span>${locate.value}</li>
+          <li><span>No. of Guests: </span>${nGuest.value}</li>
+          <li><span>Date&Time: </span>${dateTime.value}</li>
+          <li><span>Location: </span>${locate.value}</li>
           
         </ul>
         <p class="card-text text-danger mt-3"><small>* You can delete the booking before the booking date.</small></p>
@@ -77,13 +79,19 @@ const GetCard = (event) => {
     event.preventDefault();
     const bookingDateTime = new Date(dateTime.value);
     const currentDateTime = new Date();
-
-    if (bookingDateTime > currentDateTime) {
+    const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
+    if (
+      bookingDateTime > currentDateTime &&
+      bookingDateTime.getTime() - currentDateTime.getTime() >
+        oneDayInMilliseconds
+    ) {
       const cardContainer = document.querySelector(".BookedCard");
       cardContainer.innerHTML = "";
       alert("Booking deleted successfully.");
     } else {
-      alert("You cannot delete it now. Pls call 0967334567.");
+      alert(
+        "You are not allowed  deleting a booking before 1 day of the booking date. Pls call 096677328"
+      );
     }
     Bform.reset();
   };
