@@ -56,7 +56,7 @@ const GetCard = (event) => {
   <div class="row g-0">
     <div class="col-md-4">
      
-    <img src="img/yogurt.jpg" class="img-fluid img-thumbnail rounded-start" alt="...">
+    <img src="img/yogurt.jpg" class="img-fluid img-thumbnail rounded-start" alt="cardimg">
     
     </div>
     <div class="col-md-8">
